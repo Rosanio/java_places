@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UnitTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-02-16T17:24:50" hostname="epicodus-65.local" time="0.0">
+<testsuite name="UnitTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-02-16T17:36:15" hostname="epicodus-65.local" time="0.0">
   <properties/>
   <testcase name="place_instantiatesCorrectly_true" classname="UnitTest" time="0.0"/>
   <testcase name="place_setsPlaceName" classname="UnitTest" time="0.0"/>

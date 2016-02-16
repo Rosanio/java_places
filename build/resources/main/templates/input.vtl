@@ -6,3 +6,9 @@
   </div>
   <button type="submit" class="btn btn-info">Submit</button>
 </form>
+
+<ul>
+  #foreach($place in $places)
+  <li>$place.getPlaceName()</li>
+  #end
+</ul>

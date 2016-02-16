@@ -32,7 +32,14 @@ public class IntegrationTest extends FluentTest {
     assertThat(pageSource()).contains("You entered a place.");
   }
 
-
+  @Test
+  public void addPlace() {
+    goTo("http://localhost:4567/");
+    fill("#enterPlace").with("Portland");
+    submit(".btn");
+    click("a", withText("Go Back"));
+    assertThat(pageSource()).contains("Portland");
+  }
 
 
 /*
