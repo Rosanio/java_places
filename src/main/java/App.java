@@ -27,8 +27,11 @@ public class App {
       }
 
       String placeName = request.queryParams("enterPlace");
-      Place place = new Place(placeName);
-      places.add(place);
+      
+      if(placeName.length() > 0) {
+        Place place = new Place(placeName);
+        places.add(place);
+      }
 
       model.put("template", "templates/output.vtl");
       return new ModelAndView(model, layout);
