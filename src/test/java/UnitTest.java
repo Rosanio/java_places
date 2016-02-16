@@ -12,7 +12,7 @@ public void place_instantiatesCorrectly_true() {
 @Test
 public void place_setsPlaceName() {
   Place testPlace = new Place("Portland");
-  assertEquals("Portland", testPlace.getPlace());
+  assertEquals("Portland", testPlace.getPlaceName());
 }
 
 

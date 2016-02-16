@@ -1,7 +1,13 @@
 public class Place {
 
-  public Place(String place) {
+  private String mPlaceName;
 
+  public Place(String placeName) {
+    mPlaceName = placeName;
+  }
+
+  public String getPlaceName() {
+    return mPlaceName;
   }
 
 }
