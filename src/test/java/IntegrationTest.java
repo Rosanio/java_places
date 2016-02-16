@@ -41,6 +41,19 @@ public class IntegrationTest extends FluentTest {
     assertThat(pageSource()).contains("Portland");
   }
 
+  @Test
+  public void mulitplePlacesAreDisplayed() {
+    goTo("http://localhost:4567/");
+    fill("#enterPlace").with("Portland");
+    submit(".btn");
+    click("a", withText("Go Back"));
+    fill("#enterPlace").with("Syracuse");
+    submit(".btn");
+    click("a", withText("Go Back"));
+    assertThat(pageSource()).contains("Portland");
+    assertThat(pageSource()).contains("Syracuse");
+  }
+
 
 /*
   @Test
